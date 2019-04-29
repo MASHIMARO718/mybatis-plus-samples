@@ -13,7 +13,7 @@
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
         <#list table.fields as column >
-            ${column.name}<#if column_has_next>,</#if>
+            ,t.${column.name} as
         </#list>
     </sql>
     <!-- whereSql-->
