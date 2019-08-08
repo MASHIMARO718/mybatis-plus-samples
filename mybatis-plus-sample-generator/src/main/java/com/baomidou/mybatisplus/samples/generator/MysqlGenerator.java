@@ -80,7 +80,8 @@ public class MysqlGenerator {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setModuleName(scanner("模块名"));        pc.setParent("com.baomidou.mybatisplus.samples.generator");
+        pc.setModuleName(scanner("模块名"));
+        pc.setParent("com.baomidou.mybatisplus.samples.generator");
         mpg.setPackageInfo(pc);
 
         // 自定义配置
